@@ -1,0 +1,367 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.title{
+text-align: center;
+font-family: sans-serif;
+text-align: center;
+padding: 30px;
+font-size: 19px;
+}
+
+.h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding-right: 14%;
+    padding-top: 5%;
+    font-weight: 100;
+    font-size: 40px;
+    font-style: normal;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+}
+.text{
+    text-align: center;
+    font-style: normal;
+    padding-right: 14%;
+    font-family: sans-serif;
+    color: #9c9494;
+    padding-top: 21px;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+.ring{
+    position: absolute;
+    top: 54%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid rgba(170, 164, 164, 0.486);
+    border-radius: 50%;
+    height: 9%;
+    width: 4%;
+}
+.ring::before{
+    content: "";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top:-3px;
+    left:-3px;
+    border: 3px solid transparent;
+    border-right:3px solid rgba(255, 196, 0, 0.972);
+    border-bottom:3px solid rgba(255, 196, 0, 0.972);
+    border-radius: 50%;
+    animation: animatecircle 2s linear infinite; 
+}
+.time1{
+    margin: 10%;
+    margin-left: 32%;
+    font-family: sans-serif;
+    color: rgba(144, 134, 134, 0.84);
+    font-size: 18px;
+}
+.no1{
+    padding-left: 32%;
+    margin-top: -152px;
+    font-size: 42px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.ring2{
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid rgba(170, 164, 164, 0.486);
+    border-radius: 50%;
+    height: 9%;
+    width: 4%;
+    border-bottom-color: white;
+}
+.ring2::before{
+    content: "";
+    position: absolute;
+    width:80%;
+    height: 80%;
+    top:-3px;
+    left:-3px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+}
+.sec2{
+    float: right;
+}
+.line{
+    display: block;
+    position: absolute;
+    top: calc(53% - 3px);
+    left: 45%;
+    width: 57%;
+    height: 2px;
+    background: #ff000091;
+    transform-origin: center;
+}
+.line::before{
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ff000091;
+    top: -3px;
+}
+.speed{
+    margin: 145%;
+    margin-left: 1px;
+    font-family: sans-serif;
+    color: rgba(144, 134, 134, 0.84);
+    font-size: 18px;
+    width: 158%;
+}
+.no2{
+    padding-left: 6px;
+    margin-top: -91px;
+    font-size: 42px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
+.mph{
+    font-family: sans-serif;
+    color: rgba(144, 134, 134, 0.84);
+    margin: -25px;
+    margin-left: 50px;
+}
+.blue{
+    display: block;
+    position: absolute;
+    top: calc(88% - 0px);
+    left: 29%;
+    width: 33%;
+    height: 4px;
+    background: rgba(170, 164, 164, 0.486);
+}
+.blue::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: blue;
+    top: -5px;
+}
+.blue::after{
+    content: "";
+    position: absolute;
+    width: 65%;
+    height: 27%;
+    top: 1px;
+    border: 1px solid blue; 
+    background: blue;   
+}
+.material-icons{
+    margin: 21px;
+    position: absolute;
+    top: 82%;
+    left:59.5%;
+}
+.start{
+    position: absolute;
+    left: 28%;
+    bottom: 5%;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: rgba(144, 134, 134, 0.84);
+    font-size: 18px;
+}
+.pick{
+    position: absolute;
+    left: 58%;
+    bottom: 1%;
+    width: 7%;
+    font-weight: 100;
+    font-family: sans-serif;
+    color: rgba(144, 134, 134, 0.84);
+    font-size: 18px;
+}
+.btn{
+    position: absolute;
+    left: 28%;
+    top: 107%;
+    width: 35%;
+    height: 12%;
+    background: blue;
+    padding-bottom: 31px;
+    border-radius: 7px;
+    margin-bottom: 35px;
+}
+    
+              /* For Responsive Page */
+
+@media only screen and (max-width:768px){
+    .h1{
+        padding-right: 14%;
+        padding-top: 5%;
+        font-size: 38px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+    .text{
+        padding-right: 12%;
+        padding-top: 21px;
+        word-spacing: 0px;
+        letter-spacing: 1px;
+    }
+    .ring{
+        top: 52%;
+        left: 25%;
+        height: 9%;
+        width: 10%;
+    }
+    .time1{
+        margin: 25%;
+        margin-left: 16%;   
+        font-size: 16px;
+    }
+    .no1{
+        padding-left: 15%;
+        margin-top: -135px;
+        font-size: 40px;
+    }
+    .ring2{
+        top: 52%;
+        left: 69%;
+        height: 9%;
+        width: 10%;
+    }
+    .sec2{
+        float: right;
+    }
+    .speed{
+        margin: 134%;
+        margin-left: -18px;   
+        width: 173%;
+        margin-top: 124%;
+    }
+    .no2{
+        margin-top: -79px;
+        margin-left: -41%;
+    }
+    .mph{
+        margin: -25px;
+        margin-left: 27px;
+    }
+    .blue{
+        top: calc(80% - 0px);
+        left: 11%;
+        width: 72%;
+        height: 4px;
+    }
+    .material-icons{
+        margin: 21px;
+        position: absolute;
+        top: 74%;
+        left:75%;
+    }
+    .start{
+        left: 9%;
+        bottom: 14%;  
+        font-size: 18px;
+    }
+    .pick{        
+        position: absolute;
+        left: 72%;
+        bottom: 10%;
+        width: 15%;
+        font-size: 18px;
+    }
+    .btn{
+        left: 9%;
+        top: 95%;
+        width: 76%;
+        height: 11%;
+        padding-bottom: 31px;
+        margin-bottom: 35px;
+    }
+}
+
+                 /* For mobiles */ 
+
+@media only screen and (max-width:360px){
+    .h1{
+        font-size: 30px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+    }
+    .text{
+        padding-right: 6%;
+        font-size: 14px;
+    }
+    .ring{
+        top: 44%;
+        left: 25%;
+        height: 8%;
+        width: 12%;
+    }
+    .time1{
+        margin: 33%;
+        margin-left: 16%;   
+        font-size: 13px;
+    }
+    .no1{
+        padding-left: 15%;
+        margin-top: -135px;
+        font-size: 33px;
+    }
+    .ring2{
+        top: 44%;
+        left: 73%;
+        height: 8%;
+        width: 12%;
+    }
+    .speed{ 
+        width: 197%;
+        margin-top: 143%;
+        font-size: 15px;
+    }
+    .no2{
+        margin-top: -79px;
+        margin-left: -41%;
+        font-size: 33px;
+    }
+    .blue{
+        top: calc(68% - 0px);
+        left: 11%;
+        width: 72%;
+        height: 4px;
+    }
+    .material-icons{
+        margin: 21px;
+        position: absolute;
+        top: 62%;
+        left:73%;
+    }
+    .start{
+        bottom: 26%;  
+    }
+    .pick{        
+        left: 70%;
+        bottom: 23%;
+        width: 15%;
+        font-size: 16px;
+    }
+    .btn{
+        left: 10%;
+        top: 84%;
+        width: 77%;
+        height: 11%;
+    }
+}
